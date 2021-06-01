@@ -1,0 +1,22 @@
+CREATE DATABASE tuananh;
+use tuananh;
+CREATE TABLE tuananh.User (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Username varchar(20),
+    Password varchar(20),
+    Email varchar(20),
+    Phone varchar(12),
+    Point INT,
+    Status INT,
+    ListFriend varchar(225)
+);
+
+CREATE TABLE tuananh.Game(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Password varchar(20),
+    User1 INT,
+    User2 INT,
+    FOREIGN KEY (User1) REFERENCES User(id),
+    FOREIGN KEY (User2) REFERENCES User(id),
+    Result INT
+);

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/name"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/dangnhap"
+
+        android:title="Đăng nhập"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/dangky"
+
+        android:title="Đăng ký"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/dangxuat"
+
+        android:title="Đăng xuất"
+        app:showAsAction="always" />
+</menu>
