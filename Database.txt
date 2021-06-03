@@ -1,6 +1,6 @@
-CREATE DATABASE tuananh;
-use tuananh;
-CREATE TABLE tuananh.User (
+CREATE DATABASE caro;
+use caro;
+CREATE TABLE caro.User (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     Username varchar(20),
     Password varchar(20),
@@ -8,10 +8,11 @@ CREATE TABLE tuananh.User (
     Phone varchar(12),
     Point INT,
     Status INT,
-    ListFriend varchar(225)
+    ListFriend varchar(225),
+    AddFriendRequest varchar(225)
 );
 
-CREATE TABLE tuananh.Game(
+CREATE TABLE caro.Game(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     Password varchar(20),
     User1 INT,
