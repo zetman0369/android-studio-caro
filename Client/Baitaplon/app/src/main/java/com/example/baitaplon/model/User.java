@@ -20,6 +20,16 @@ public class User implements Serializable {
 
     private String listFriend;
 
+    private String addFriendRequest;
+
+    public String getAddFriendRequest() {
+        return addFriendRequest;
+    }
+
+    public void setAddFriendRequest(String addFriendRequest) {
+        this.addFriendRequest = addFriendRequest;
+    }
+
     public int getId() {
         return id;
     }

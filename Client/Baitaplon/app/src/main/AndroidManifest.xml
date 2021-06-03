@@ -24,5 +24,13 @@
         </activity>
         <activity android:name=".dangky">
         </activity>
+        <activity android:name=".Chart">
+        </activity>
+        <activity android:name=".Friend">
+        </activity>
+        <activity android:name=".AddFriend">
+        </activity>
+        <activity android:name=".SearchUser">
+        </activity>
     </application>
 </manifest>

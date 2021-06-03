@@ -19,18 +19,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.28">
+
         <TextView
-            android:fontFamily="serif"
-            android:textSize="70dp"
-            android:layout_gravity="center_horizontal"
             android:id="@+id/namecaro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
             android:text="Caro"
+            android:textSize="70dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:textSize="15dp"
             android:layout_gravity="center_horizontal"
@@ -43,59 +45,73 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="10dp"
         android:orientation="vertical"
         android:weightSum="3"
-        android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.70">
+        app:layout_constraintVertical_bias="0.728">
 
         <Button
-            android:fontFamily="serif"
-            android:layout_margin="15dp"
             android:id="@+id/choionline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
             android:layout_weight="1"
             android:background="#a6dfdfdf"
             android:drawablePadding="10dp"
+            android:fontFamily="serif"
             android:text="Chơi Online"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
 
         <Button
-            android:fontFamily="serif"
-            android:layout_margin="15dp"
             android:id="@+id/choivoimay"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
             android:layout_weight="1"
             android:background="#a6dfdfdf"
             android:drawablePadding="10dp"
+            android:fontFamily="serif"
             android:text="Chơi với máy"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
 
         <Button
-            android:fontFamily="serif"
-            android:layout_margin="15dp"
             android:id="@+id/hainguoichoi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
             android:layout_weight="1"
             android:background="#a6dfdfdf"
             android:drawablePadding="10dp"
+            android:fontFamily="serif"
             android:text="2 Người chơi"
-            android:textSize="20dp"/>}
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/banbe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="#a6dfdfdf"
+            android:drawablePadding="10dp"
+            android:fontFamily="serif"
+            android:text="Bạn bè"
+            android:textSize="20dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -124,25 +140,14 @@
 
         <Button
             android:fontFamily="serif"
-            android:id="@+id/cuahang"
+            android:id="@+id/ketban"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:background="#a6dfdfdf"
             android:drawablePadding="10dp"
-            android:text="Cửa Hàng"/>
-
-        <Button
-            android:fontFamily="serif"
-            android:id="@+id/qua"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_weight="1"
-            android:background="#a6dfdfdf"
-            android:drawablePadding="10dp"
-            android:text="Quà" />}
+            android:text="Kết bạn"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,7 +35,9 @@ public class MainActivity extends AppCompatActivity {
         Button choionline = findViewById(R.id.choionline);
         Button choivoimay = findViewById(R.id.choivoimay);
         Button hainguoichoi = findViewById(R.id.hainguoichoi);
-
+        Button bangxephang = findViewById(R.id.bangxephang);
+        Button banbe = findViewById(R.id.banbe);
+        Button ketban = findViewById(R.id.ketban);
         choionline.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,6 +60,45 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), GamePlayActivity.class);
                 startActivity(intent);
+            }
+        });
+        bangxephang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Chart.class);
+                startActivity(intent);
+            }
+        });
+        ketban.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences thisUser = getSharedPreferences("thisUser", Context.MODE_PRIVATE);
+                String json = thisUser.getString("thisUser", "");
+                Gson gson = new Gson();
+                User user = gson.fromJson(json, User.class);
+                if(user!=null){
+                    Intent intent = new Intent(getApplicationContext(), AddFriend.class);
+                    startActivity(intent);
+                }else{
+                    Intent dangnhap = new Intent(getApplicationContext(), dangnhap.class);
+                    startActivity(dangnhap);
+                }
+            }
+        });
+        banbe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences thisUser = getSharedPreferences("thisUser", Context.MODE_PRIVATE);
+                String json = thisUser.getString("thisUser", "");
+                Gson gson = new Gson();
+                User user = gson.fromJson(json, User.class);
+                if(user!=null){
+                    Intent intent = new Intent(getApplicationContext(), Friend.class);
+                    startActivity(intent);
+                }else{
+                    Intent dangnhap = new Intent(getApplicationContext(), dangnhap.class);
+                    startActivity(dangnhap);
+                }
             }
         });
     }
